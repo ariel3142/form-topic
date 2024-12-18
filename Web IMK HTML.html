@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Peduli Lingkungan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">PeduliLingkungan</div>
+        <input type="text" placeholder="Search..." class="search-bar">
+        <button class="login-btn">Login</button>
+    </header>
+
+    <!-- CONTAINER -->
+    <div class="container">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <h3>TOPICS</h3>
+            <ul>
+                <li>🌍 General</li>
+                <li>♻️ Recycling</li>
+                <li>🌱 Sustainability</li>
+                <li>🧹 Clean-Up Events</li>
+                <li>📢 News</li>
+            </ul>
+            <!-- CREATE NEW TOPIC FORM -->
+            <h3>Create New Topic</h3>
+            <form id="newTopicForm">
+                <input type="text" id="topicTitle" placeholder="Title" required>
+                <textarea id="topicDescription" placeholder="Description" required></textarea>
+                <input type="file" id="topicImage" accept="image/*">
+                <button type="submit">Create Topic</button>
+            </form>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main>
+            <!-- EXISTING POST -->
+            <div class="post">
+                <div class="vote">
+                    <button class="upvote">🔼</button>
+                    <span class="score">0</span>
+                    <button class="downvote">🔽</button>
+                </div>
+                <div class="content">
+                    <h2 class="post-title">Mengurangi Sampah Plastik di Pantai</h2>
+                    <p class="post-description">Mari bersama-sama membersihkan pantai dari sampah plastik pada hari Minggu ini...</p>
+                    <img src="ilustrasi-pemanasan-global-kartun-istockphoto_ratio-16x9.jpg" alt="Clean Beach Event">
+                </div>
+                <button class="comment-btn" data-comment="comments1">💬 Komentar</button>
+            </div>
+
+            <!-- COMMENTS SECTION -->
+            <div id="comments1" class="comments">
+                <h3>Comments</h3>
+                <ul class="comment-list"></ul>
+                <textarea placeholder="Add a comment..." class="comment-input"></textarea>
+                <button class="add-comment-btn">Submit</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
